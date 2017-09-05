@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -35,26 +35,28 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#            window = rg.RoseWindow(100, 400)
+#            window = rg.RoseWindow(400, 100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
 #                chen = rg.Polygon()
-                 hui = rg.Ellipse()
+#                hui = rg.Ellipse()
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                circle.clone()
+#                circle.move_by()
+#                circle.attach_to()
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                center_point, radius, color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            render: Draw ALL the objects attached to RoseWindow.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            Keeps the window open until user clicks. We can stop the animation anytime.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -80,7 +82,7 @@ def main():
     example3()
 
 
-Ref example1():
+def example1():
     """ Displays an empty window. """
     window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
     window.close_on_mouse_click()
@@ -115,8 +117,7 @@ def example2():
     window.render()
 
     window.close_on_mouse_click()
-    chen = rg.Polygon()
-    hui = rg.Ellipse()
+
 
 def example3():
     """ Displays a Circle and a Rectangle. """
