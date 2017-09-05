@@ -56,7 +56,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            render: Draw ALL the objects attached to RoseWindow.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            Keeps the window open until user clicks. We can stop the animation anytime.
+#            When you need to keep the window open. otherwise, you can not tell what is inside the window.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
